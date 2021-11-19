@@ -28,7 +28,7 @@ public class Main {
 			// 오른쪽으로 갈지 왼쪽으로 갈지를 선택(1, 2)
 			// 둘 중에 강화 유리를 선택하면 다음 다리
 			System.out.println((step+1) + "번째 다리");
-			System.out.println(users + "번 사람 출발 ");
+			System.out.println(users + "번 참가자 출발 ");
 			System.out.print("왼(1)/오른(2): ");
 			int u = sc.nextInt();   // 예외 처리를 해주면 좋겠다
 			if (bList.get(step) == u) {
@@ -36,7 +36,7 @@ public class Main {
 				System.out.println();
 				step++;   // 다음 다리
 			} else {
-				System.out.println(users + "번 탈락");
+				System.out.println(users + "번 참가자 탈락");
 				System.out.println();
 				if (users == 8) {
 					isSuccess = false;
